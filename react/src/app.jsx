@@ -1,17 +1,12 @@
-export function App () {
-    return (
-      <section className='App'>
-        {
-          users.map(({ userName, name, isFollowing }) => (
-            <TwitterFollowCard
-              key={userName}
-              userName={userName}
-              initialIsFollowing={isFollowing}
-            >
-              {name}
-            </TwitterFollowCard>
-          ))
-        }
-      </section>
-    )
-  }
+import React from "react";
+import {Button} from "@nextui-org/react";
+
+export default function App() {
+  return (
+    <div className="Button">
+    <Button size="md" color="primary" variant="shadow">
+      About Me
+    </Button>
+    </div>
+  );
+}
